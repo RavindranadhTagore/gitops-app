@@ -36,7 +36,7 @@ Deploy app using ArgoCD CLI:
 
 argocd login localhost:8080 --username admin --password <password> --insecure
 argocd app create nginx-app \
-  --repo https://github.com/<your-username>/gitops-demo.git \
+  --repo(https://github.com/RavindranadhTagore/gitops-demo.git)/<your-username>/gitops-demo.git \
   --path k8s \
   --dest-server https://kubernetes.default.svc \
   --dest-namespace default \
